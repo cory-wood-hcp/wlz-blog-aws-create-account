@@ -72,8 +72,8 @@ locals {
   # ])
 
   project_name = {
-    "operate" = "avm-aws-operate",
-    "sandbox" = "avm-aws-sandbox"
+    "operate" = "wlz-aws-operate",
+    "sandbox" = "wlz-aws-sandbox"
     "root"    = "avm-root"
   }
   account_name = "avm-${var.organizational_unit}-${var.app_abbreviation}"

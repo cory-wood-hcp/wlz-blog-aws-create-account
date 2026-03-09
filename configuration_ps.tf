@@ -25,6 +25,7 @@ module "platform_services_configuration_workspace" {
       description = "Enabled regions for the account"
     }
   }
+  depends_on = [tfe_workspace_run.iam_ws_run]
 }
 
 resource "tfe_workspace_run" "platform_services_ws_run" {
