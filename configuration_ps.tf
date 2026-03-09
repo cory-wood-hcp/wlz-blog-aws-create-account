@@ -18,7 +18,8 @@ module "platform_services_configuration_workspace" {
     }
     enabled_regions = {
       key         = "enabled_regions"
-      value       = "[\"${join("\",\"", local.selected_regions)}\"]"
+      # value       = "[\"${join("\",\"", local.selected_regions)}\"]"
+        value       = enabled_regions
       hcl         = true
       category    = "terraform"
       description = "Enabled regions for the account"

@@ -33,7 +33,7 @@ resource "tfe_workspace" "workspace" {
   assessments_enabled   = true
   auto_apply            = var.enable_auto_apply
 
-  project_id = data.tfe_project.avm[0].id
+  project_id = data.tfe_project.avm.id
 
   vcs_repo {
     identifier                 = var.github_repository_identifier
