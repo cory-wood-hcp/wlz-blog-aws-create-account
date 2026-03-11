@@ -37,15 +37,6 @@ variable "account_email" {
 }
 
 locals {
-  # # Create list of selected regions based on enabled variables
-  # selected_regions = compact([
-  #   var.enable_us_east_1 ? "us-east-1" : "",
-  #   var.enable_us_east_2 ? "us-east-2" : "",
-  #   var.enable_us_west_2 ? "us-west-2" : "",
-  #   var.enable_ap_south_1 ? "ap-south-1" : "",
-  #   var.enable_ap_southeast_1 ? "ap-southeast-1" : ""
-  # ])
-
   project_name = {
     "operate" = "wlz-aws-operate",
     "sandbox" = "wlz-aws-sandbox"
